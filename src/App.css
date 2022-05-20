@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  text-align: left;
 }
 
 .App-logo {
@@ -35,4 +35,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+img {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  margin: 0 0 20px 20px;
+  max-width: 200px;
+  min-width: 100px;
+  max-height: 200px;
+  border: solid 5px black;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
