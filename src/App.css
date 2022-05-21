@@ -40,7 +40,7 @@
 img {
   display: flex;
   justify-content: right;
-  align-items: right;
+  align-self: flex-end;
   margin: 0 0 20px 20px;
   max-width: 200px;
   min-width: 100px;
@@ -52,4 +52,16 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+button {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px 0;
+  width: 50%;
+  cursor: pointer;
+  
 }

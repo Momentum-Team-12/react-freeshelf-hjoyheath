@@ -9,9 +9,9 @@ function Book({ title, author, shortDescription, coverImageUrl, url, publisher, 
 
       <div className="book">
         <h1 className="book-name">{title}</h1>
-        <img src={coverImageUrl} alt={title} className="book-image"></img>
         <h2 className="book-author">{author}</h2>
         <p className="book-description">{shortDescription}</p>
+        <img src={coverImageUrl} alt={title} className="book-image"></img>
 
         {
           isExpanded ? (
