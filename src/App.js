@@ -26,10 +26,12 @@ function Book({
         {isExpanded ? (
           <>
             <button onClick={handleExpanded}>Less Information</button>
-            <p href={url} alt={title} className="book-link"></p>
-            <p className="book-publisher">{publisher}</p>
-            <p className="publish-date">{publicationDate}</p>
+            <p className="book-publisher">Publisher: {publisher}</p>
+            <p className="publish-date">Publication Date: {publicationDate}</p>
             <p className="book-detail">{detailedDescription}</p>
+            <p> 
+              <a href={url} aria-label="Read more" className="book-link">Read More...</a>
+            </p>
           </>
         ) : (
           <button onClick={handleExpanded}>More Information</button>
@@ -43,7 +45,7 @@ function Book({
 }
 
 function App() {
-  const [books, setBooks] = useState(initialBookState);
+  const [books] = useState(initialBookState);
   return (
     <div className="container">
       <h1>Tech Books to Read</h1>

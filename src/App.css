@@ -36,21 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  margin: auto;
+}
+
 .container {
   display: flex;
   flex-direction: column;
-  align-items:flex-start;
+  
 
+
+
+}
+.book {
+  display: flex;
+  margin-bottom: 48px;
+}
+
+h1 {
+  margin-bottom: 32px;
+  text-decoration: underline;
 }
 
 h2 {
   margin-top: 0px;
-}
-
-.book {
-  display: flex;
-  margin-bottom: 48px;
-  /* justify-content: space-around; */
+ 
 }
 
 .book-image {
@@ -61,7 +72,7 @@ h2 {
 }
 
 .book-image img {
-  border: solid 5px black;
+  border: solid .5px black;
   object-fit: contain;
 }
 
