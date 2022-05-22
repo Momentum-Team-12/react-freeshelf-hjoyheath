@@ -46,7 +46,7 @@ function App() {
   const [books, setBooks] = useState(initialBookState);
   return (
     <div className="container">
-      <h1>Books to Read</h1>
+      <h1>Tech Books to Read</h1>
       {books.map((book) => (
         <Book {...book} key={book.id} />
       ))}
